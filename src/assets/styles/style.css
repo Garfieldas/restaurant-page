@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+:root {
+    --black: #000;
+    --text: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Amatic SC", sans-serif;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--black);
+    opacity: 0.60;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbar-link {
+    padding: 0.2rem
+}
+
+.navbar-link:hover {
+    background-color: var(--text);
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.header-container {
+    background-image: url(../images/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(50%);
+}
+
+.display-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding: 2rem;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first-word {
+    text-align: center;
+    display: block;
+}
+
+.menu-btn {
+    padding: 0.8rem 1rem;
+    background-color: var(--black);
+    color: inherit;
+    font-family: inherit;
+    font-size: 2rem;
+    border: none;
+}
+
+.menu-btn:hover {
+    background-color: var(--text);
+    opacity: 0.8;
+    color: var(--black);
+}
