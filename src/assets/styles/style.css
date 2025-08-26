@@ -2,6 +2,7 @@
 :root {
     --black: #000;
     --text: #fff;
+    --red: #f44336;
 }
 
 *, *::before, *::after {
@@ -52,6 +53,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(50%);
+    padding-bottom: 0.1rem;
 }
 
 .display-middle {
@@ -61,12 +63,11 @@ h1 {
     justify-self: center;
     font-size: 3rem;
     text-transform: capitalize;
-    padding: 2rem;
+    padding: 13rem;
 
 }
 
 .container {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -89,4 +90,76 @@ h1 {
     background-color: var(--text);
     opacity: 0.8;
     color: var(--black);
+}
+
+.display-bottom {
+    padding: 0.5rem 1rem;
+    background-color: var(--black);
+    width: 20%;
+    margin: 1rem 2rem;
+}
+
+.bottom-text {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.menu-container {
+    background-color: var(--black);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title {
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+.menu-sections {
+    display: flex;
+    background-color: var(--black);
+    justify-content: space-between;
+}
+
+.border {
+    border-color: var(--text);
+    border-width: thin;
+    border: 0.1px solid;
+}
+
+.tab {
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    flex-grow: 2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: var(--red);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text);
+    color: var(--black);
+    border-top: none;
+}
+
+.menu-item {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    background-color: var(--black);
+    opacity: 0.6;
+    color: var(--text);
+    padding: 0.4rem 1rem;
+    font-size: 2rem;
 }
