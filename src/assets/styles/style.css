@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 :root {
     --black: #000;
     --text: #fff;
@@ -38,17 +39,17 @@ h1 {
     opacity: 1;
 }
 
-.navbar-link {
-    padding: 0.2rem
+.navbar__link {
+    padding: 0.2rem;
 }
 
-.navbar-link:hover {
+.navbar__link:hover {
     background-color: var(--text);
     color: var(--black);
     opacity: 0.8;
 }
 
-.header-container {
+.header {
     background-image: url(../images/pizza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,7 +57,7 @@ h1 {
     padding-bottom: 0.1rem;
 }
 
-.display-middle {
+.header__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,20 +65,19 @@ h1 {
     font-size: 3rem;
     text-transform: capitalize;
     padding: 13rem;
-
 }
 
-.container {
+.header__container {
     display: flex;
     justify-content: center;
 }
 
-.first-word {
+.header__title-first {
     text-align: center;
     display: block;
 }
 
-.menu-btn {
+.header__btn {
     padding: 0.8rem 1rem;
     background-color: var(--black);
     color: inherit;
@@ -86,49 +86,50 @@ h1 {
     border: none;
 }
 
-.menu-btn:hover {
+.header__btn:hover {
     background-color: var(--text);
     opacity: 0.8;
     color: var(--black);
 }
 
-.display-bottom {
+.header__bottom {
     padding: 0.5rem 1rem;
     background-color: var(--black);
     width: 20%;
     margin: 1rem 2rem;
+    max-width: 200px;
 }
 
-.bottom-text {
-    font-size: 1.2rem;
+.header__bottom-text {
+    font-size: 1.5rem;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
-.menu-container {
+.menu {
     background-color: var(--black);
-    padding: 2rem;
+    padding: 0 20rem;
     display: flex;
     flex-direction: column;
 }
 
-.menu-title {
-    padding: 2rem;
-    font-size: 2.5rem;
+.menu--bordered {
+    border: 0.1px solid var(--text);
 }
 
-.menu-sections {
+.menu__title {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.menu__sections {
     display: flex;
     background-color: var(--black);
     justify-content: space-between;
 }
 
-.border {
-    border-color: var(--text);
-    border-width: thin;
-    border: 0.1px solid;
-}
-
-.tab {
+.menu__tab {
     padding: 1rem 5rem;
     font-size: 2rem;
     flex-grow: 2;
@@ -136,30 +137,44 @@ h1 {
     cursor: pointer;
 }
 
-.tab:hover {
+.menu__tab:hover {
     background-color: var(--red);
 }
 
-.menu {
+.menu__list {
     display: flex;
     flex-direction: column;
     background-color: var(--text);
     color: var(--black);
-    border-top: none;
 }
 
-.menu-item {
-    display: flex;
+.menu__item {
     padding: 1rem;
     font-size: 1.8rem;
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 0.1px solid var(--black);
+}
+
+.menu__item-tag {
+    color: var(--text);
+    padding: 0.4rem 1rem;
+    font-size: 2rem;
 }
 
 .price {
     background-color: var(--black);
     opacity: 0.6;
-    color: var(--text);
-    padding: 0.4rem 1rem;
+}
+
+.additional {
+    background-color: var(--red);
+}
+
+.menu__item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item-bottom {
     font-size: 2rem;
 }

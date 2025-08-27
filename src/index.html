@@ -7,46 +7,94 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
-    <header class="header-container">
-      <nav class="navbar">
-        <a class="navbar-link" href="#">Home</a>
-        <a class="navbar-link" href="#">Menu</a>
-        <a class="navbar-link" href="#">About</a>
-        <a class="navbar-link" href="#">Contact</a>
-      </nav>
-      <div class="display-middle">
-        <div class="container">
-          <h1>
-            <span class="first-word">
-            Thin
-            </span> 
-            Crust Pizza</h1>
-        </div>
-        <div class="container">
-          <button class="menu-btn">Let me see the Menu</button>
-        </div>
+<header class="header">
+  <nav class="navbar">
+    <a class="navbar__link" href="#">Home</a>
+    <a class="navbar__link" href="#">Menu</a>
+    <a class="navbar__link" href="#">About</a>
+    <a class="navbar__link" href="#">Contact</a>
+  </nav>
+  <div class="header__content">
+    <div class="header__container">
+      <h1>
+        <span class="header__title-first">Thin</span> Crust Pizza
+      </h1>
+    </div>
+    <div class="header__container">
+      <button class="header__btn">Let me see the Menu</button>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <span class="header__bottom-text">Open from 10am to 12pm</span>
+  </div>
+</header>
+
+<section class="menu">
+  <div class="menu__title">
+    <h1>The Menu</h1>
+  </div>
+  <div class="menu__sections">
+    <div class="menu__tab menu--bordered">Pizza</div>
+    <div class="menu__tab menu--bordered">Salads</div>
+    <div class="menu__tab menu--bordered">Starter</div>
+  </div>
+  <div class="menu__list menu--bordered">
+    <div class="menu__item">
+      <div class="menu__item-top">
+      <h3>Margherita</h3>
+      <span class="menu__item-tag price">$12.50</span>
       </div>
-      <div class="display-bottom">
-        <span class="bottom-text">
-          Open from 10am to 12pm
-        </span>
+      <div class="menu__item-bottom">
+        <span>Fresh Tomatoes, Fresh Mozzarella, Fresh Basil</span>
       </div>
-    </header>
-    <section class="menu-container">
-      <div class="menu-title container">
-        <h1>The Menu</h1>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-top">
+      <h3>Formaggio</h3>
+      <span class="menu__item-tag price">$15.50</span>
       </div>
-      <div class="menu-sections">
-        <div class="tab border">Pizza</div>
-        <div class="tab border">Salads</div>
-        <div class="tab border">Starter</div>
+      <div class="menu__item-bottom">
+        <span>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</span>
       </div>
-      <div class="menu border">
-        <div class="menu-item">
-          <h3>Margherita</h3>
-          <span class="price">$12.50</span>
-        </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-top">
+      <h3>Chicken</h3>
+      <span class="menu__item-tag price">$17.00</span>
       </div>
-    </section>
+      <div class="menu__item-bottom">
+        <span>Fresh tomatoes, mozzarella, chicken, onions</span>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-top">
+      <h3>Pineapple'o'clock</h3>
+      <span class="menu__item-tag price">$16.50</span>
+      </div>
+      <div class="menu__item-bottom">
+        <span>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</span>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-top">
+      <h3>Meat Town <span class="menu__item-tag additional">Hot!</span></h3>
+      <span class="menu__item-tag price">$20.00</span>
+      </div>
+      <div class="menu__item-bottom">
+        <span>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</span>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-top">
+      <h3>Parmam <span class="menu__item-tag price">New</span></h3>
+      <span class="menu__item-tag price">$20.00</span>
+      </div>
+      <div class="menu__item-bottom">
+        <span>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</span>
+      </div>
+    </div>
+  </div>
+</section>
+
   </body>
 </html>
