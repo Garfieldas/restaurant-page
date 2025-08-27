@@ -178,3 +178,26 @@ h1 {
 .menu__item-bottom {
     font-size: 2rem;
 }
+
+.about {
+    background-color: var(--red);
+    filter: grayscale(75%);
+    padding: 0 20rem;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__text {
+    display: flex;
+    padding: 2rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.about__image-chef {
+    width: 150px;
+    border-radius: 50%;
+}
