@@ -108,7 +108,6 @@ h1 {
 
 .menu {
     background-color: var(--black);
-    padding: 0 20rem;
     display: flex;
     flex-direction: column;
 }
@@ -182,7 +181,7 @@ h1 {
 .about {
     background-color: var(--red);
     filter: grayscale(75%);
-    padding: 0 20rem;
+    padding: 0 10rem;
 }
 
 .about__content {
@@ -190,14 +189,32 @@ h1 {
     flex-direction: column;
 }
 
-.about__text {
-    display: flex;
-    padding: 2rem;
+.about__content p {
     font-size: 1.5rem;
-    justify-content: space-between;
 }
 
-.about__image-chef {
-    width: 150px;
-    border-radius: 50%;
+.about__title {
+    font-size: 4rem;
+    text-align: center;
 }
+
+.about__content-image-chef {
+    border-radius: 50%;
+    width: 200px;
+    float: right;;
+}
+
+.about__content-image-restaurant {
+    width: 100%;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+.about__content-opening-hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 0.4rem 10rem;
+}
+
+
