@@ -4,4 +4,5 @@ import { header } from "./components/header";
 
 window.addEventListener('load', () => {
     navBar();
+    header();
 });

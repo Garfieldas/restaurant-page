@@ -1,6 +1,8 @@
 export const header = () => {
     const header = document.querySelector('.header');
-    const headerContent = document.querySelector('.header__content');
+    const headerContent = document.createElement('div');
+    headerContent.className = 'header__content';
+    header.appendChild(headerContent);
 
     const container1 = document.createElement('div');
     const container2 = document.createElement('div');
@@ -13,7 +15,8 @@ export const header = () => {
 
     const h1 = document.createElement('h1');
     const span = document.createElement('span');
-    span.textContent = 'Thin'
+    span.textContent = 'Thin';
+    span.className = 'header__title-first';
     h1.appendChild(span);
     const text = document.createTextNode('Crust Pizza');
     h1.appendChild(text);
@@ -24,12 +27,12 @@ export const header = () => {
     headerBtn.className = 'header__btn';
     headerBtn.textContent = 'Let me see the Menu';
     container2.appendChild(headerBtn);
-    header.appendChild(container2);
+    headerContent.appendChild(container2);
 
     
     const headerBottomText = document.createElement('span');
-    headerBtn.className = 'header__bottom-text';
-    headerBtn.textContent = 'Open from 10am to 12pm';
+    headerBottomText.className = 'header__bottom-text';
+    headerBottomText.textContent = 'Open from 10am to 12pm';
     container3.appendChild(headerBottomText);
     header.appendChild(container3);
 }
