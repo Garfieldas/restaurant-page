@@ -23,12 +23,17 @@ export const menu = () => {
 
   const tabs = [tab1, tab2, tab3];
   const tabNames = ["Pizza", "Salads", "Starter"];
+  const lists = [ pizzaList, saladList, soupList ];
 
   tabs.forEach((tab, index) => {
     tab.className = "menu__tab menu--bordered";
     let text = document.createTextNode(tabNames[index]);
     tab.appendChild(text);
     menuSection.appendChild(tab);
+    tab.addEventListener('click', () => {
+      menuList.innerHTML = '';
+      lists[index]();
+    })
   });
   const menuList = document.createElement("div");
   menuList.className = "menu__list menu--bordered";
