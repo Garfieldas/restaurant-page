@@ -1,4 +1,6 @@
 export const header = () => {
+    const menu = document.querySelector('.menu');
+    const about = document.querySelector('.about');
     const header = document.querySelector('.header');
     const headerContent = document.createElement('div');
     headerContent.className = 'header__content';
@@ -26,6 +28,7 @@ export const header = () => {
     const headerBtn = document.createElement('button');
     headerBtn.className = 'header__btn';
     headerBtn.textContent = 'Let me see the Menu';
+    headerBtn.addEventListener('click', () => menu.scrollIntoView());
     container2.appendChild(headerBtn);
     headerContent.appendChild(container2);
 
@@ -33,6 +36,7 @@ export const header = () => {
     const headerBottomText = document.createElement('span');
     headerBottomText.className = 'header__bottom-text';
     headerBottomText.textContent = 'Open from 10am to 12pm';
+    headerBottomText.addEventListener('click', () => about.scrollIntoView({block: "end"}));
     container3.appendChild(headerBottomText);
     header.appendChild(container3);
 }

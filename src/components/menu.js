@@ -26,17 +26,27 @@ export const menu = () => {
   const lists = [ pizzaList, saladList, soupList ];
 
   tabs.forEach((tab, index) => {
-    tab.className = "menu__tab menu--bordered";
+    index === 0 ? tab.className = 'menu__tab menu--bordered active' : tab.className = 'menu__tab menu--bordered';
     let text = document.createTextNode(tabNames[index]);
     tab.appendChild(text);
     menuSection.appendChild(tab);
-    tab.addEventListener('click', () => {
+    tab.addEventListener('click', (e) => {
       menuList.innerHTML = '';
       lists[index]();
+      resetActiveTabs(e);
+      tab.classList.add('active')
     })
   });
+
+  const resetActiveTabs = (e) => {
+    tabs.forEach((tab) => {
+      if (tab !== e.target) {
+        tab.classList.remove('active');
+      }
+    })
+  }
   const menuList = document.createElement("div");
   menuList.className = "menu__list menu--bordered";
   menu.appendChild(menuList);
-  soupList()
+  pizzaList();
 };
