@@ -2,16 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: "./src/main.js",
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-  },
-  devtool: "eval-source-map",
-  devServer: {
-    watchFiles: ["./src/index.html"],
+    assetModuleFilename: "assets/[name][ext][query]",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -29,7 +25,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpe?g|gif)$/i,
         type: "asset/resource",
       },
     ],
